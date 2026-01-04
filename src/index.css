@@ -1,0 +1,20 @@
+/* Import Tailwind's base styles, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* --- ADD THIS RULE --- */
+/* Apply the dark background and default text color to the entire page */
+/* body {
+  @apply bg-slate-900 text-white;
+} */
+
+@layer base {
+  input::-ms-reveal,
+  input::-ms-clear {
+        display: none;
+  }
+}
